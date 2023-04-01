@@ -14,7 +14,5 @@ Be sure to substitute `./latest.dump` to where your dump file is located, if it'
 `docker exec -i postgres pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d <your-db-name> < ./latest.dump
 ` 
 #### Install requirements in Python
-For correct work you also need to install module 'psycopg2-binary':  
-`pip install psycopg2-binary`
-and check your ve requirements with:    
-`pip freeze`
+For correct work you also need to install requirements:
+`pip install -r requirements.txt`
