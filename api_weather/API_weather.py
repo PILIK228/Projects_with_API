@@ -10,8 +10,8 @@ DB_HOST = config['Postgres_DB']['host']
 DB_USER = config['Postgres_DB']['user']
 DB_PASS = config['Postgres_DB']['password']
 APPID = config["Weather_API"]["APPID"]
-URL_GEO = "http://api.openweathermap.org/geo/1.0/direct"
-URL_FC = "https://api.openweathermap.org/data/2.5/forecast"
+URL_GEO = config["Weather_API"]["URL_GEO"]
+URL_FC = config["Weather_API"]["URL_FC"]
 
 
 # Получение координат города и его фк
